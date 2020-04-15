@@ -1,0 +1,413 @@
+/*############# Alosana  #############
+Developed By Totalizand
+*/
+
+/* fonts */
+@font-face {
+    font-family: Avenir;
+    src: url(../assets/fonts/Avenir-Light.ttf);
+}
+
+
+/* common */
+body{
+    font-family: Avenir;
+    font-weight: normal;
+    font-size: 16px;
+    background: #f7f7f7;
+}
+body .bg-light-cust{
+    background-color: #fff;
+}
+.height-100{
+    height: 100%;
+}
+.width-100{
+    width: 100%;
+}
+
+.flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flex-end{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.flex-column{
+    flex-flow: column;
+}
+.pull-left{
+    float: left;
+}
+
+/* padding */
+.pad-top-30{
+    padding-top: 30px;
+}
+.pad-bot-50{
+    padding-bottom: 50px;
+}
+/* margin */
+.marg-bot-30{
+    margin-bottom: 30px;
+}
+.marg-bot-20{
+    margin-bottom: 20px;
+}
+
+
+/* container */
+@media only screen and (min-width: 1000px){
+    .cust-container{
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
+
+/*--------- login page -----------*/
+.social-login > div{
+    border: 1px solid #ccc;
+    position: relative;
+}
+.social-login > div:hover a{
+    text-decoration: none;
+    background: #102f39;
+    color: #fff;
+}
+.social-login > div:hover img{
+    filter: brightness(0) invert(1);
+}
+.social-login > div img{
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.social-login > div:not(:last-child){
+    margin-bottom: 10px;
+}
+.social-login_outer{
+    width: 100%;
+    padding: 10px 20px;
+}
+.login-bg{
+    background-image: url(../assets/images/login-bg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+.login-outer .row{
+    padding: 3em;
+}
+.login-outer  .box-shadow{
+    box-shadow: 0px 0px 5px 0px #ccc;
+}
+.login-link{
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: 10px;
+}
+
+
+/*## input ##*/
+.cust-input{
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background: #fff;
+}
+.cust-input:focus{
+    outline-color: #feea37;
+    border-color: #feea37;
+}
+
+/* button */
+button.btn:focus{
+    outline: 0;
+    box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.25) ;
+}
+.icon-only:focus{
+    outline: 0;
+    box-shadow: none;
+}
+.icon-only {
+    background: transparent;
+    border: 0;
+}
+/* back button */
+.back-btn{
+    position: relative;
+    transition: .1s;
+    font-size: 19px;
+    font-weight: 900;
+}
+.back-btn:hover{
+    transform: translateX(5px);
+    transition: .3s;
+}
+.cust-submit-btn{
+    background: #feea37;
+    border: 0;
+    padding: 7px 20px;
+    font-size: 19px;
+    font-weight: 600;
+    box-shadow: 0px 0px 28px 1px #f1f1f1;
+    width: 170px;
+}
+
+/*#### header #####*/
+header{
+    box-shadow: 0px 0px 3px 0px #ccc;
+    background: #fff;
+}
+.logo-image{
+    width: 135px;
+    height: auto;
+}
+.logo-image img{
+    width: 100%;
+}
+.cut-post_btn{
+    background: #feea37;
+    border: 0;
+    padding: 5px 15px;
+    border-radius: 100px;
+    box-shadow: 0px 0px 5px -2px #c1c1c1;
+}
+.cut-post_btn:focus{
+    transform: scale(0.95);
+    transition: .2s;
+}
+.right-menu-header > div:not(:last-child){
+    margin-right: 20px;
+}
+.profile-btn{
+    position: relative;
+}
+.profile-btn:after {
+    content: '';
+    background: #00FFB1;
+    height: 8px;
+    width: 8px;
+    border-radius: 100%;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+.search-menu{
+    padding-left: 30px;
+}
+.search-menu input{
+    border-radius: 100px;
+    width: 70%;
+    background: #F4F4F4;
+    border: 0;
+    box-shadow: 0px 0px 6px -5px #000000;
+}
+.search-menu input:focus{
+    box-shadow: 0 0 0 0.1rem rgb(254, 234, 56);
+}
+/* ############################### */
+
+.bredcrumb-middle{
+    top: 15px;
+    position: relative;
+}
+
+/* Upload post header */
+.form-header-strip span{
+    text-transform: uppercase;
+}
+.form-header-strip{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    padding: 20px 40px;
+    border-radius: 100px;
+    width: fit-content;
+    margin: auto;
+    /* transform: translateX(-35px); */
+}
+.form-step .step-icon {
+    background: #ccc;
+    width: 23px;
+    height: 23px;
+    border-radius: 100px;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 23px;
+    font-weight: bold;
+    margin-right: 10px;
+    color: #fff;
+}
+/* active */
+.form-step.active  .step-icon, .completed .step-icon{
+    background: #feea37;
+    color: #000;
+}
+.completed .step-icon{
+    color: transparent;
+    position: relative;
+}
+.completed .step-icon i{
+    color: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 11px;
+}
+.form-step.active span.stext, .form-step.completed span.stext{
+    color: #000;
+}
+span.stext {
+    font-size: 14px;
+    color: #ccc;
+}
+.form-step{
+    position: relative;
+}
+.step-2.form-step:after , .step-1.form-step:after{
+    content: '';
+    width: 42px;
+    height: 1px;
+    background: #ccc;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.form-step:not(:last-child) {
+    padding-right: 70px;
+}
+
+/* upload form */
+.box-upload{
+    padding: 40px 0;
+}
+.upload-form-section .fileinput{
+    height: 190px;
+}
+
+.upload-form-section label{
+    display: block;
+}
+.fileinput-outer{
+    border: 1px dotted #ccc;
+    border-radius: 4px;
+}
+.fileinput{
+    opacity: 0;
+    z-index: 1;
+    position: relative;
+    cursor: pointer;
+}
+.fileinput-outer{
+    position: relative;
+}
+.fileinput-outer .file-img{
+    width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px dashed;
+    border-radius: 100px;
+    padding: 17px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+.files-display{
+    border: 1px dotted #ccc;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    height: 60px;
+}
+.files-display img:not(:last-child){
+    margin-right: 10px;
+}
+.files-display img{
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    box-shadow: 0px 0px 2px #000;
+    /* margin-bottom: 10px; */
+}
+
+/* upload finished */
+.thankyou-box{
+    padding: 3em;
+}
+.thankyou-box .icon-list{
+    height: 60px;
+    width: 60px;
+    border: 2px solid #feea37;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.thankyou-box  .text-area p:first-child{
+    margin-bottom: 3px;
+    font-size: 19px;
+    color: #000;
+}
+
+/* posts  page*/
+.cust-box{
+    background-color: #fff;
+    padding: 15px;
+}
+.post-top {
+    align-items: center;
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.post-top .profile-left{
+    margin-right: 10px;
+}
+.post-top .text-cont .name{
+    text-transform: capitalize;
+    font-weight: 600;
+    color: #000;
+}
+.post-top .text-cont .date{
+    font-size: 14px;
+}
+.post-action-btn{
+    text-align: right;
+    margin-top: -2em;
+}
+.post-action-btn button {
+    margin-left: -22px;
+}
+.short-comments{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.commentors img:not(:first-child){
+    margin-left: -18px;
+}
+
+.total-list{
+    color: #ccc;
+}
+.total-list .like-count{
+    margin-right: 10px;
+}

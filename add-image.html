@@ -1,0 +1,118 @@
+<html>
+    <head>
+        <title>Add Image</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- bootstrap library -->
+        <link rel="stylesheet" href="libraries/css/bootstrap.min.css">
+        <link rel="stylesheet" href="libraries/css/bootstrap-grid.min.css">
+        <link rel="stylesheet" href="libraries/css/bootstrap-reboot.min.css">
+
+        <!-- fontawesome library -->
+        <link rel="stylesheet" href="libraries/fontawesome/css/all.min.css">
+        <link rel="stylesheet" href="libraries/fontawesome/css/brands.min.css">
+
+        <!-- custom style  -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <nav class="navbar navbar-expand-md ">
+                    <a href="index.html"  class="navbar-brand logo-image"><img src="assets/images/logo.png" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="search-menu width-100">
+                        <input type="text" class="form-control" placeholder="Search Idea, Technology etc.">
+                    </div>
+
+                    <div class="right-menu-header text-right width-100 flex-end">
+                        <div class="add-post">
+                            <button class="btn add_post_btn cut-post_btn">+ Post Idea</button>
+                        </div>
+
+                        <div class="message-action">
+                          <button class="icon-only msg-btn header-icon"><i class="fas fa-envelope"></i></button>
+                        </div>
+
+                        <div class="like-action">
+                          <button class="icon-only like-btn header-icon"><i class="fas fa-heart"></i></button>
+                        </div>
+
+                        <div class="profile-login">
+                          <button class="icon-only profile-btn"><img src="assets/images/profile.png" alt=""></button>
+                        </div>
+                    </div>
+
+
+
+                    <!-- <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                      <ul class="navbar-nav">
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Link</a>
+                        </li>    
+                      </ul>
+                    </div>   -->
+                </nav>
+            </div>
+        </header>
+
+        <section class="describe-idea pad-bot-50">
+            <div class="container">
+                <div class="top-section pad-top-30 marg-bot-30">
+                    <div class="bredcrumb pull-left bredcrumb-middle">
+                        <button class="icon-only back-btn" onclick="goBack()"><i class="fas fa-chevron-left"></i> Back</button>
+                    </div>
+                    <div class="cust-container">
+                        <div class="form-header-strip">
+                            <div class="step-1 form-step completed">
+                                <span class="step-icon ">1<i class="fas fa-check"></i></span><span class="stext">Describe Idea</span>
+                            </div>
+                            <div class="step-2 form-step active">
+                                <span class="step-icon ">2</span><span class="stext">Add Image</span>
+                            </div>
+                            <div class="step-3 form-step">
+                                <span class="step-icon ">3</span><span class="stext">Post Idea</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-light-cust upload-form-section ">
+                    <div class="cust-container">
+                        <div class="box-upload">
+                            <div class="form-group">
+                                <label for="upload">Upload / drag your document/video/image*</label>
+                                <div class="fileinput-outer">
+                                    <input type="file" class="cust-input fileinput" multiple id="file-upload">
+                                    <span class="file-img">
+                                        <img src="assets/images/icons/file.svg" width="100%"/>
+                                    </span>
+                                </div>
+                                <div class="files-display"></div> 
+                            </div>
+                            <div class="form-action text-center">
+                                <a href="post-idea.html" ><button type="submit" class="cust-submit-btn">Next</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- bootstrap Js library -->
+        <script src="libraries/js/jquery.min.js"></script>
+        <script src="libraries/js/bootstrap.min.js"></script>
+        <script src="libraries/js/bootstrap.bundle.min.js"></script>
+
+        <!-- custom js  -->
+        <script src="js/custom.js"></script>
+    </body>
+</html>
