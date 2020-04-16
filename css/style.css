@@ -57,7 +57,37 @@ body .bg-light-cust{
 .marg-bot-20{
     margin-bottom: 20px;
 }
+.marg-bot-0{
+    margin-bottom: 0;
+}
 
+/* color */
+.bg-yellow{
+    background-color: #feea37;
+}
+.color-dark{
+    color: #000;
+}
+
+/* font */
+.text-shadow-b{
+    text-shadow: 0px 0px 1px #000;
+    color: #000;
+}
+
+.flex{
+    display: flex;
+}
+.display-flex-right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.display-flx-center{
+    display: flex;
+    align-items: center;
+}
 
 /* container */
 @media only screen and (min-width: 1000px){
@@ -137,6 +167,13 @@ button.btn:focus{
 .icon-only {
     background: transparent;
     border: 0;
+}
+.view_btn{
+    background: #fff;
+    border: 0;
+    max-width: 200px;
+    width: 170px;
+    padding: 5px;
 }
 /* back button */
 .back-btn{
@@ -378,7 +415,7 @@ span.stext {
     width: 100%;
     margin-bottom: 20px;
 }
-.post-top .profile-left{
+.profile-left{
     margin-right: 10px;
 }
 .post-top .text-cont .name{
@@ -411,3 +448,83 @@ span.stext {
 .total-list .like-count{
     margin-right: 10px;
 }
+.post:not(:last-child){
+    margin-bottom: 50px;
+}
+/* cust-grid */
+.custgrid .col2 div{
+    width: 100%;
+    height: 50%;
+}
+.custgrid .col2 div img{
+    width: 100%;
+    height: 100%;
+}
+.custgrid .col2{
+    width: 100%;
+}
+
+/* sidebar */
+.sidebar_area {
+    background-color: #fff;
+}
+.display-flex{
+    display: flex;
+    align-items: center;
+}
+.item-sidebar .icon-left {
+    font-weight: 100;
+    border: 1px dashed #000;
+    color: #000;
+    width: 57px;
+    height: 57px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+    border-radius: 100px;
+}
+.cust-text-right h3{
+    font-size: 15px;
+    font-weight: 600;
+    color: #000;
+    text-transform: capitalize;
+    line-height: 22px;
+    margin-bottom: 0;
+}
+.text-capital, .suggest-text{
+    text-transform: capitalize;
+}
+.cust-text-right p{
+    margin-bottom: 0;
+}
+.item-sidebar {
+    padding: 15px 10px;
+    border-bottom: 1px solid #ccc;
+}
+.item-sidebar:hover{
+    border-color: #feea37;
+}
+.item-sidebar:last-child{
+    border-bottom: 0;
+}
+.bottom-text{
+    font-size: 14px;
+    color: #636363;
+}
+.link-item{
+    color: #000;
+    text-decoration: none;
+}
+.link-item:hover{
+    text-decoration: none;
+}
+.latest-post-idea{
+    padding: 30px 15px;
+}
+
+
+
+
+
+
