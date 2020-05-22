@@ -25,6 +25,9 @@ body .bg-light-cust{
 .width-100{
     width: 100%;
 }
+a{
+    text-decoration: none;
+}
 
 .flex-center{
     display: flex;
@@ -50,7 +53,17 @@ body .bg-light-cust{
 .pad-bot-50{
     padding-bottom: 50px;
 }
+.pad-top-50{
+    padding-top: 50px;
+}
+.pad-0{
+    padding: 0;
+}
+
 /* margin */
+.marg-right_10{
+    margin-right: 10px;
+}
 .marg-bot-30{
     margin-bottom: 30px;
 }
@@ -83,10 +96,12 @@ body .bg-light-cust{
     align-items: center;
     justify-content: space-between;
 }
-
 .display-flx-center{
     display: flex;
     align-items: center;
+}
+.justfy-inbetween{
+    justify-content: space-between;
 }
 
 /* container */
@@ -95,6 +110,12 @@ body .bg-light-cust{
         max-width: 600px;
         margin: 0 auto;
     }
+}
+
+/* page title */
+.page-inner-title{
+    margin-bottom: 22px;
+    border-bottom: 1px dotted #ccc;
 }
 
 /*--------- login page -----------*/
@@ -195,6 +216,24 @@ button.btn:focus{
     box-shadow: 0px 0px 28px 1px #f1f1f1;
     width: 170px;
 }
+/* friend list */
+.friend_list-action button{
+    border: 0;
+    min-width: 100px;
+    padding: 5px;
+    box-shadow: 0px 0px 3px 0px #ccc;
+}
+.friend_list-action .btn-unfrd{
+    background: #feea37;
+    color: #000;
+}
+.friend_list-action .btn-blck{
+    background: #b3b3b3;
+    color: #000;
+}
+.friend_list-action button:hover {
+    transform: scale(1.06);
+}
 
 /*#### header #####*/
 header{
@@ -210,6 +249,8 @@ header{
 }
 .cut-post_btn{
     background: #feea37;
+    color: #000;
+    font-weight: 600;
     border: 0;
     padding: 5px 15px;
     border-radius: 100px;
@@ -247,6 +288,99 @@ header{
 }
 .search-menu input:focus{
     box-shadow: 0 0 0 0.1rem rgb(254, 234, 56);
+}
+
+/* menu */
+.menu-parent .sub-menu{
+    background-color: #fff;
+    box-shadow: 0px 0px 23px 0px #ccc;
+    border: 1px solid #ccc;
+    /* padding: 15px; */
+    position: absolute;
+    top: inherit;
+    right: 0;
+    top: 100%;
+    z-index: 1;
+    width: 16em;
+    text-align: left;
+}
+.menu-parent {
+    position: relative;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+.menu-parent .sub-menu .profile{
+    justify-content: center;
+    border-bottom: 1px dashed #ccc;
+    padding: 10px;
+}
+img.profile-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+.name-desp h4{
+    font-size: 18px;
+    text-align: left;
+    font-weight: 800;
+}
+ul.menu{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.menu-box .menu-act{
+    padding: 10px;
+}
+ul.menu-logout{
+    background-color: #eee;
+    padding: 10px;
+    text-align: center;
+}
+ul.menu-logout li{
+    justify-content: center;
+    text-align: left;
+}
+ul.menu-logout:hover {
+    background-color: #fbe739;
+}
+.menu-parent:not(.menu-open) .sub-menu {
+    display: none;
+}
+.sub-menu.menu-normal li {
+    border-bottom: 1px dashed #eee;
+    padding: 10px 5px;
+}
+.sub-menu.menu-normal li:last-child{
+    border-bottom: 0;
+}
+.sub-menu.menu-normal li:hover, .menu-users .menu-act li:hover{
+    background-color: #eee;
+}
+.sub-menu li{
+    display: flex;
+    align-items: center;
+}
+.sub-menu li a{
+    text-decoration: none;
+    color: #000;
+    display: block;
+    width: 100%;
+}
+.sub-menu i{
+    color: #444;
+    margin-right: 5px;
+    width: 25px;
+    text-align: center;
+}
+
+.sub-menu.menu-normal {
+    padding: 11px;
+}
+.menu-users .menu-act li{
+    padding: 10px;
 }
 /* ############################### */
 
@@ -404,7 +538,7 @@ span.stext {
     color: #000;
 }
 
-/* posts  page*/
+/*########## posts  page ############*/
 .cust-box{
     background-color: #fff;
     padding: 15px;
@@ -464,7 +598,7 @@ span.stext {
     width: 100%;
 }
 
-/* sidebar */
+/*####### sidebar ########*/
 .sidebar_area {
     background-color: #fff;
 }
@@ -523,8 +657,210 @@ span.stext {
     padding: 30px 15px;
 }
 
+/* #### Friend List #### */
+.friend_list_box .friends_list a, .friends-bx{
+    justify-content: space-between;
+    text-decoration: none;
+}
+.friend_list_box .friends_list:not(:last-child), .friends-bx:not(:last-child){
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
 
 
 
+/*####### chat box  #########*/
+.chat-friends-list{
+    height: 73vh;
+    overflow: auto;
+}
+.chating_box{
+    height: 73vh;
+    padding: 0  ;
+}
+.chat-friends-list::-webkit-scrollbar-track
+ {
+     /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); */
+     border-radius: 40px;
+     /* background-color: #F5F5F5; */
+ }
+ 
+ .chat-friends-list::-webkit-scrollbar
+ {
+     width: 4px;
+     border-radius:20px;
+     /* background-color: #F5F5F5; */
+ }
+ 
+ .chat-friends-list::-webkit-scrollbar-thumb
+ {
+     border-radius: 10px;
+     -webkit-box-shadow: inset 0 0 6px rgba(59, 59, 59, 0.3);
+     background-color: rgb(219, 219, 219);
+ }
+ .chat-own-info-top{
+    padding: 5px 10px;
+    background-color: #eee;
+ }
+ .chating-box{
+    height: 53vh;
+    background: #ffffff;
+    overflow: auto;
+    padding: 20px;
+ }
+ .chating_box .bottom-strip{
+    padding: 16px 10px;
+    background-color: #eee;
+ }
+ .chating_box .bottom-strip .type-chat{
+    width: 100%;
+    padding: 0 20px;
+ }
+ .chating_box .bottom-strip .type-chat input:focus{
+     outline: 0;
+     border-color: #feea37;
+ }
+ .chating_box .bottom-strip .type-chat input{
+    width: 100%;
+    padding: 5px 15px;
+    border-radius: 100px;
+    border: 1px solid #949494;
+ }
+ .chating_box .bottom-strip .send-btn .send-msg-btn{
+    background-color: #009688;
+    border: 0;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px 14px;
+    border-radius: 4px;
+}
+.emoji button{
+    font-size: 28px;
+    color: #8c8b8a;
+}
+
+/* chats */
+.others-chat, .my-chat{
+    display: block;
+    width: 100%;
+}
+.others-chat{
+    float: left;
+}
+.my-chat{
+    float: right;
+}
+.others-chat .chat-cont{
+    background: #dad8d8;
+    border-top-right-radius: 8px;
+    box-shadow: 3px 3px 5px -1px #d6d6d6;
+}
+.my-chat .chat-cont{
+    margin-left: auto;
+    box-shadow: -3px 3px 5px -1px #d6d6d6;
+    background-color: #feea37;
+    border-top-left-radius: 8px;
+}
+.others-chat .chat-cont, .my-chat .chat-cont{
+    min-width: 70px;
+    width: fit-content;
+    max-width: 80%;
+    padding: 4px 12px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
 
 
+/* list box */
+.list-box-outer .list {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+/* my profile page */
+.user-cover_img{
+    min-height: 185px;
+    background-image: url('../assets/images/cover.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.user-profile .profile-image{
+    width: 140px;
+    height: 140px;
+    border-radius: 100%;
+    overflow: hidden;
+    border: 3px solid #fff;
+    margin-right: 14px;
+}
+.user-profile .profile-image img{
+    object-fit: cover;
+    width: 100%;
+}
+.user-profile{
+    margin-top: -5.7em;
+}
+.user-profile .profile-name{
+    font-weight: 800;
+    color: #fff;
+}
+.myprofile-sect{
+    padding: 30px 40px;
+    padding-top: 5em;
+}
+section.myprofile{
+    margin-top: -3em;
+}
+.myprofile-form label{
+    display: block;
+}
+.myprofile-form .cust-form-control{
+    background: #ffffff00;
+    border: 0;
+    color: #000;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 100%;
+    padding: 5px 10px;
+}
+.myprofile-form .cust-form-control:focus{
+    border-color: #feea37;
+    outline: 0;
+}
+.myprofile-form .cust-group{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 15px;
+}
+
+/* matches */
+.matches_tab .nav-tabs{
+    border: 0;
+}
+.matches_tab .nav-tabs li a.active{ 
+    background: #03A9F4;
+    color: #fff;
+    border: 1px solid #04a9f4;
+}
+.matches_tab .nav-tabs li a{ 
+    border: 1px solid #04a9f4;
+    border-radius: 0px;
+    margin-right: 10px;
+    color: #04a9f4;
+}
+.idea-ref{
+    padding: 3px 20px;
+    border: 1px solid;
+    min-width: 112px;
+    text-align: center;
+}
+
+
+/* Responsive */
+@media only screen and (max-width: 999px){
+    .logo-image{
+        width: 50px;
+    }
+}
