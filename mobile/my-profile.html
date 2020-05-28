@@ -1,0 +1,164 @@
+<html>
+    <head>
+        <title>Timeline</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- bootstrap library -->
+        <link rel="stylesheet" href="../libraries/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../libraries/css/bootstrap-grid.min.css">
+        <link rel="stylesheet" href="../libraries/css/bootstrap-reboot.min.css">
+
+        <!-- fontawesome library -->
+        <link rel="stylesheet" href="../libraries/fontawesome/css/all.min.css">
+        <link rel="stylesheet" href="../libraries/fontawesome/css/brands.min.css">
+
+        <!-- custom style  -->
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+      <header>
+          <div class="container">
+              <nav class="navbar navbar-expand-md ">
+                  <a href="index.html"  class="navbar-brand logo-image"><img src="../assets/images/logo.png" alt=""></a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="search-menu width-100">
+                      <input type="text" class="form-control" placeholder="Search Idea, Technology etc.">
+                  </div>
+
+                  <div class="right-menu-header text-right width-100 flex-end">
+                      <div class="add-post">
+                          <a href="../describe-idea.html"> <button class="btn add_post_btn cut-post_btn">+ Post Idea</button></a>
+                      </div>
+
+                      <div class="message-action menu-parent">
+                          <button class="icon-only msg-btn header-icon"><i class="fas fa-envelope"></i></button>
+                          <div class="sub-menu menu-normal ">
+                          <div class="menu-box ">
+                              <ul class="menu ">
+                              <li  class="menu-items">
+                                  <i class="fas fa-fire-alt"></i> <a href="../matches.html">Matches</a>
+                              </li>
+                              <li  class="menu-items">
+                                  <i class="fas fa-user-plus"></i> <a href="../invitation.html">Invitation</a>
+                              </li>
+                              <li  class="menu-items">
+                                  <i class="fas fa-comment"></i> <a href="">Chat</a>
+                              </li>
+                              </ul>
+                          </div>
+                          </div>
+                      </div>
+
+                      <div class="like-action">
+                          <a href="liked-ideas.html"><button class="icon-only like-btn header-icon"><i class="fas fa-heart"></i></button></a>
+                      </div>
+
+                      <div class="profile-login menu-parent">
+                          <a > <button class="icon-only profile-btn"><img src="assets/images/profile.png" alt=""></button></a>
+                          <div class="sub-menu pad-0">
+                          <div class="profile display-flex">
+                              <img src="assets/images/profile.png" alt="" class="profile-img">
+                              <div class="name-desp text-left">
+                              <h4 class="marg-bot-0">Dan walker</h4>
+                              <p class="marg-bot-0">dan@gmail.com</p>
+                              </div>
+                          </div>
+                          <div class="menu-box menu-users">
+                              <ul class="menu menu-act">
+                                <li  class="menu-items"><i class="fas fa-user-alt"></i> <a href="my-profile.html">My Profile</a></li>
+                                <li  class="menu-items"><i class="fas fa-lightbulb"></i> <a href="my-ideas.html">My Ideas</a></li>
+                                <li  class="menu-items"><i class="fas fa-lightbulb"></i> <a href="friend-list.html">My Friends</a></li>
+                              </ul>
+
+                              <ul class="menu menu-logout">
+                              <li  class="menu-items"><i class="fas fa-sign-out-alt"></i> <a href="login.html">Logout</a></li>
+                              </ul>
+                          </div>
+                          </div>
+                      </div>
+                  </div>
+              </nav>
+          </div>
+
+          <div class="mobile-bottom-nav">
+            <div class="nav-item profile">
+              <a href="../mobile/my-profile.html">
+                <img src="../assets/images/profile.png" alt="">
+              </a>
+            </div>
+            <div class="nav-item">
+              <a href="../describe-idea.html"><i class="fas fa-plus"></i></i></a>
+            </div>
+            <div class="nav-item ">
+              <a href="../friend-list.html"><i class="fas fa-user-friends"></i></a>
+            </div>
+            <div class="nav-item chat ">
+              <a href="../chat.html"><i class="fas fa-comment"></i></i></a>
+            </div>
+            <div class="nav-item">
+              <a href="../liked-ideas.html"><i class="fas fa-heart"></i></a>
+            </div>
+          </div>
+      </header>        
+      
+      <!-- user header -->
+      <section class="user-header-section">
+        <div class="container">
+          <div class="bredcrumb pull-left bredcrumb-middle">
+            <button class="icon-only back-btn" onclick="goBack()"><i class="fas fa-chevron-left"></i> Back</button>
+        </div>
+        </div>
+          <div class="user-cover_img">
+
+          </div>
+          <div class="container">
+              <div class="user-profile display-flex ">
+                  <div class="profile-image">
+                      <img src="../assets/images/myprofile.jpg" alt="">
+                      <a href="../my-profile.html" class="edit-profile-btn"><i class="fas fa-pencil-alt"></i></a>
+                  </div>
+                  <h2 class="profile-name">Dan Walker</h2>
+              </div>
+          </div>
+      </section>
+
+        <section class="profile-page pad-bot-50 pad-top-10">
+            <div class="container">
+                <div class="my-profile-section">
+                    <a href="../friend-list.html" class="profile-item">
+                        <i class="fas fa-user-friends"></i>
+                        <h4>Friend List</h4>
+                    </a>
+                    <a href="../my-ideas.html" class="profile-item">
+                        <i class="fas fa-lightbulb"></i>
+                        <h4>My Ideas</h4>
+                    </a>
+                    <a href="../invitation.html" class="profile-item">
+                        <i class="fas fa-user-plus"></i>
+                        <h4>Invitations</h4>
+                    </a>
+                    <a href="../matches.html" class="profile-item">
+                        <i class="fas fa-fire-alt"></i>
+                        <h4>Matches</h4>
+                    </a>
+                    <a href="../login.html" class="profile-item">
+                        <i class="fas fa-running"></i>
+                        <h4>Logout</h4>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- bootstrap Js library -->
+        <script src="../libraries/js/jquery.min.js"></script>
+        <script src="../libraries/js/bootstrap.min.js"></script>
+        <script src="../libraries/js/bootstrap.bundle.min.js"></script>
+
+        <!-- custom js  -->
+        <script src="../js/custom.js"></script>
+
+
+    </body>
+</html>

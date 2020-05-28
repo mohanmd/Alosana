@@ -20,14 +20,14 @@
             <div class="container">
                 <nav class="navbar navbar-expand-md ">
                     <a href="index.html"  class="navbar-brand logo-image"><img src="assets/images/logo.png" alt=""></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                       <span class="navbar-toggler-icon"></span>
-                    </button>
+                    </button> -->
                     <div class="search-menu width-100">
                         <input type="text" class="form-control" placeholder="Search Idea, Technology etc.">
                     </div>
 
-                    <div class="right-menu-header text-right width-100 flex-end">
+                    <div class="right-menu-header text-right width-100 flex-end mobile-hide">
                         <div class="add-post">
                            <a href="describe-idea.html"> <button class="btn add_post_btn cut-post_btn">+ Post Idea</button></a>
                         </div>
@@ -69,6 +69,7 @@
                                 <ul class="menu menu-act">
                                   <li  class="menu-items"><i class="fas fa-user-alt"></i> <a href="my-profile.html">My Profile</a></li>
                                   <li  class="menu-items"><i class="fas fa-lightbulb"></i> <a href="my-ideas.html">My Ideas</a></li>
+                                  <li  class="menu-items"><i class="fas fa-user-friends"></i> <a href="friend-list.html">My Friends</a></li>
                                 </ul>
 
                               <ul class="menu menu-logout">
@@ -78,8 +79,6 @@
                           </div>
                         </div>
                     </div>
-
-
 
                     <!-- <div class="collapse navbar-collapse" id="collapsibleNavbar">
                       <ul class="navbar-nav">
@@ -95,6 +94,26 @@
                       </ul>
                     </div>   -->
                 </nav>
+            </div>
+
+            <div class="mobile-bottom-nav">
+              <div class="nav-item profile">
+                <a href="mobile/my-profile.html">
+                  <img src="assets/images/profile.png" alt="">
+                </a>
+              </div>
+              <div class="nav-item">
+                <a href="describe-idea.html"><i class="fas fa-plus"></i></i></a>
+              </div>
+              <div class="nav-item">
+                <a href="friend-list.html"><i class="fas fa-user-friends"></i></a>
+              </div>
+              <div class="nav-item chat">
+                <a href="friend-list.html"><i class="fas fa-comment"></i></i></a>
+              </div>
+              <div class="nav-item">
+                <a href="liked-ideas.html"><i class="fas fa-heart"></i></a>
+              </div>
             </div>
         </header>
 
@@ -120,7 +139,9 @@
                         <img src="assets/images/post-image.png" width="100%" alt="">
                       </div>
                       <div class="post-action-btn"> 
-                        <button class="icon-only comments"><img src="assets/images/icons/comment.svg" /></button>
+                        <a href="comments.html">
+                          <button class="icon-only comments"><img src="assets/images/icons/comment.svg" /></button>
+                        </a>
                         <button class="icon-only share"><img src="assets/images/icons/share.svg" /></button>
                         <button class="icon-only like"><img src="assets/images/icons/like.svg" /></button>
                       </div>
@@ -135,6 +156,10 @@
                           <span class="likes"><i class="fas fa-heart"></i></span><span class="like-count">27</span>
                           <span class="coments"><i class="fas fa-comment-dots"></i></span><span class="cmt-count">13</span>
                         </div>
+                      </div>
+                      <div class="post-comment">
+                        <input type="text" placeholder="Type Your Comments" class="comment-input">
+                        <button class="comment-submit">Post</button>
                       </div>
                     </div>
                     <!--Post 1 End-->
@@ -156,15 +181,17 @@
                         <div class="col-md-4">
                           <img src="assets/images/post-img-2.png" width="100%" alt="">
                         </div>
-                        <div class="col-md-8 display-flx-center">
-                          <div class="post-right-cont">
+                        <div class="col-md-8 display-flx-center mobile-hide">
+                          <div class="post-right-cont ">
                             <h5 class="color-dark">At vero eos et accusam et justo duo dolores?</h5>
                             <p class="marg-bot-0">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
                           </div>
                         </div>
                       </div>
-                      <div class="post-action-btn"> 
-                        <button class="icon-only comments"><img src="assets/images/icons/comment.svg" /></button>
+                      <div class="post-action-btn">  
+                        <a href="comments.html">
+                          <button class="icon-only comments"><img src="assets/images/icons/comment.svg" /></button>
+                        </a>
                         <button class="icon-only share"><img src="assets/images/icons/share.svg" /></button>
                         <button class="icon-only like"><img src="assets/images/icons/like.svg" /></button>
                       </div>
@@ -179,6 +206,10 @@
                           <span class="likes"><i class="fas fa-heart"></i></span><span class="like-count">27</span>
                           <span class="coments"><i class="fas fa-comment-dots"></i></span><span class="cmt-count">13</span>
                         </div>
+                      </div>
+                      <div class="post-comment">
+                        <input type="text" placeholder="Type Your Comments" class="comment-input">
+                        <button class="comment-submit">Post</button>
                       </div>
                     </div>
                     <!--Post 2 End-->
@@ -211,8 +242,10 @@
                           </div>
                         </div>
                       </div>
-                      <div class="post-action-btn"> 
-                        <button class="icon-only comments"><img src="assets/images/icons/comment.svg" /></button>
+                      <div class="post-action-btn">  
+                        <a href="comments.html">
+                          <button class="icon-only comments"><img src="assets/images/icons/comment.svg" /></button>
+                        </a>
                         <button class="icon-only share"><img src="assets/images/icons/share.svg" /></button>
                         <button class="icon-only like"><img src="assets/images/icons/like.svg" /></button>
                       </div>
@@ -231,11 +264,16 @@
                     </div>
                     <!--Post 3 End-->
                   </div>
+                  <div class="post-comment">
+                    <input type="text" placeholder="Type Your Comments" class="comment-input">
+                    <button class="comment-submit">Post</button>
+                  </div>
                 </div>
-                <div class="col-md-4 col-sm-12">
-                  <div class="sidebar_area marg-bot-20">
+
+                <div class="col-md-4 col-sm-12 mobile-hide">
+                  <!-- <div class="sidebar_area marg-bot-20 story_box">
                     <div class="sidebar-title item-sidebar">
-                      <h4 class="title marg-bot-0">Stories</h4>
+                      <h4 class="title marg-bot-0">Matches</h4>
                     </div>
 
                     <div class="add-new-story item-sidebar">
@@ -285,7 +323,7 @@
                         </div>
                       </a>
                     </div>
-                  </div>
+                  </div> -->
 
                   <div class="sidebar-area  marg-bot-20 bg-yellow">
                     <div class="latest-post-idea text-center">

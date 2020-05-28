@@ -56,6 +56,9 @@ a{
 .pad-top-50{
     padding-top: 50px;
 }
+.pad-top-10{
+    padding-top: 10px;
+}
 .pad-0{
     padding: 0;
 }
@@ -239,6 +242,10 @@ button.btn:focus{
 header{
     box-shadow: 0px 0px 3px 0px #ccc;
     background: #fff;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 9;
 }
 .logo-image{
     width: 135px;
@@ -562,7 +569,9 @@ span.stext {
 }
 .post-action-btn{
     text-align: right;
-    margin-top: -2em;
+    margin-top: -2em;    
+    z-index: 1;
+    position: relative;
 }
 .post-action-btn button {
     margin-left: -22px;
@@ -593,9 +602,30 @@ span.stext {
 .custgrid .col2 div img{
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 .custgrid .col2{
     width: 100%;
+}
+.post-comment .comment-input{
+    width: 100%;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #828282;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0px;
+}
+.post-comment{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-top: 14px;
+}
+.post-comment   button{
+    padding: 5px 10px;
+    border: 0;
+    background-color: #ffe816;
+    border: 1px solid #e4cd09;
 }
 
 /*####### sidebar ########*/
@@ -834,6 +864,11 @@ section.myprofile{
     border-bottom: 1px solid #eee;
     margin-bottom: 15px;
 }
+/* ideas */
+.top-row-idea{
+    /* width: 100%; */
+    justify-content: space-between;
+}
 
 /* matches */
 .matches_tab .nav-tabs{
@@ -857,10 +892,300 @@ section.myprofile{
     text-align: center;
 }
 
+/* hide */
+.add-new-story{
+    display: none;
+}
+
+/* my profile */
+.my-profile-section a.profile-item {
+    display: flex;
+    align-items: center;
+    padding: 13px 5px;
+    border-bottom: 1px solid #cacaca;
+}
+.my-profile-section a.profile-item:hover {
+    background-color: #cacaca;
+    text-decoration: none;
+    border-radius: 7px;
+}
+.my-profile-section a.profile-item:last-child{
+    border-bottom: 0;
+}
+.my-profile-section a.profile-item h4{
+    font-size: 20px;
+    color: #000;
+    /* margin-left: 5px; */
+    margin-bottom: 0;
+}
+a.profile-item i {
+    font-size: 17px;
+    width: 30px;
+    color: #3e3e3e;
+    /* text-align: center; */
+}
+.profile-page{
+    padding-bottom: 100px;
+}
+.edit-profile-btn{
+    font-size: 17px;
+    color: #fff;
+    position: absolute;
+    right: 15px;
+    bottom: 9px;
+    z-index: 9999;
+}
+.edit-profile-btn:hover{
+    color: #feea37;
+}
+
+/* comments */
+.comments-box .profile-img{
+    width: 42px;
+    height: 42px;
+}
+.comments-box .profile-img img{
+    width: 100%;
+}
+.comments-box .comments-text {
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+.comments-add textarea{
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px;
+}
+.comments-box  .send-btn{
+    background-color: #feea37;
+    border: 0;
+    min-width: 80px;
+    margin-top: 10px;
+    padding: 5px 5px;
+    font-weight: 700;
+    box-shadow: 0px 0px 5px 0px #ccc;
+}
+.comments-box  .send-btn:hover{
+    background-color: #e4cf17;
+    transition: .4s;
+}
+
+
 
 /* Responsive */
+@media only screen and (min-width: 649px){
+    .mobile-bottom-nav{
+        display: none;
+    }
+}
 @media only screen and (max-width: 999px){
     .logo-image{
         width: 50px;
+    }
+    /* header */
+    header .search-menu{
+        float: right;
+        width: 70%;
+        padding-left: 0;
+    }
+    header .navbar{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .search-menu input{
+        width: 100%;
+    }
+
+    /* hide */
+    .mobile-hide{
+        display: none;
+    }
+    header button.navbar-toggler{
+        display: none;
+    }
+    header .right-menu-header{
+        display: none;
+    }
+    .form-step span.stext{
+        display: none;
+    }
+    /* chat */
+    .chat-friends-list{
+        display: none;
+    }
+
+    /* chat box */
+    .chating_box .bottom-strip{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+    }
+    .chat,.chat .col-md-8{
+        padding: 0;
+    }
+
+    /* custom box */
+    .cust-box{
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media only screen and (max-width: 648px){
+    .login-outer .row{
+        padding: 0;
+    }
+    /* header */
+    header .search-menu input{
+        font-size: 13px;
+    }
+
+    /* background */
+    body{
+        background-color: #fff;
+    }
+    /* mobile bottom navigation */
+    .mobile-bottom-nav{ 
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        left: 0;
+        background: #fff;
+        z-index: 99;
+        display: flex;
+        padding: 11px 10px;
+        border-top: 1px solid #eee;
+    }
+    .mobile-bottom-nav .nav-item{
+        width: 100%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .mobile-bottom-nav .nav-item a{
+        font-size: 21px;
+        color: #989898;
+    }
+    .mobile-bottom-nav .active a {
+        color: #03A9F4;
+    }
+    .mobile-bottom-nav .nav-item.profile img{
+        width: 25px;
+    }
+    /* post-idea */
+    section:not(.user-header-section) .bredcrumb-middle {
+        top: -13px;
+    }
+    .thankyou-box {
+        padding: 1em;
+    }
+    .form-header-strip{
+        padding: 13px 21px;
+        background: #f3f3f3;
+    }
+    /* post image grid */
+    .custgrid img{
+        width: 100%;
+    }
+
+    .describe-idea .box-upload{
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 0;
+    }
+    .describe-idea .box-upload textarea.cust-input{
+        height: 80px;
+    }
+
+    /* friend list */
+    .friends_list  > a, 
+    .invitation_outer .list {
+        flex-wrap: wrap;
+    }
+    .friends_list .friend_list-action,
+    .post_idea .friend_list-action{
+        width: 100%;
+        display: flex;
+    }
+    .friends_list .friend_list-action{
+        margin-top: 10px;
+    }
+    
+    /* flex wrap */
+    .matches_list, .post_idea .list {
+        flex-wrap: wrap;
+    }
+    .matches_list .friend_list-action, .matches_list .idea-ref,
+    .matches_tab li.nav-item{
+        width: 100%;
+    }
+    .matches_tab li.nav-item{
+        margin-bottom: 5px;
+        text-align: center;
+    }
+    .matches_list .idea-ref{
+        margin: 10px 0;
+    }
+    .tab-content #match_profile{
+        padding: 0;
+    }
+
+    /* post action button */
+    .post-action-btn button img{
+        width: 42px;
+    }
+    .post-action-btn{
+        margin-top: -1em;
+    }
+
+    /* friend list */
+    .friend_list-action {
+        margin-top: 10px;
+    }
+    .friend_list-action button{
+        min-width: 80px;    
+    }
+    /* my profile */
+    .user-cover_img{
+        min-height: 100px;
+    }
+    section.myprofile{
+        margin-top: 15px;
+    }
+    .user-profile .profile-image{
+        width: 80px;
+        height: 80px;
+        margin: auto;
+        position: relative;
+    }
+    .myprofile-sect{
+        padding: 0;
+        padding-top: 1em;
+    }
+    .user-profile {
+        margin-top: -2.7em;
+        display: block;
+        text-align: center;
+    }
+    .user-profile .profile-name{
+        color: #444;
+        font-size: 20px;
+        margin-top: 11px;
+    }
+    .top-row-idea{
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+/* max width 480x */
+@media only screen and (max-width: 480px){
+    .liked_idea .list > div:first-child{
+        width: 100%;
+    }
+    .friend_list-action button{
+        width: 100%;
+        margin-bottom: 5px;
     }
 }
