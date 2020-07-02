@@ -12,6 +12,10 @@
         <link rel="stylesheet" href="libraries/fontawesome/css/all.min.css">
         <link rel="stylesheet" href="libraries/fontawesome/css/brands.min.css">
 
+        <!-- owl carousel -->
+        <link rel="stylesheet" href="libraries/OwlCarousel/css/owl.carousel.css">
+        <link rel="stylesheet" href="libraries/OwlCarousel/css/owl.theme.default.css">
+
         <!-- custom style  -->
         <link rel="stylesheet" href="css/style.css">
     </head>
@@ -33,18 +37,36 @@
                         </div>
 
                         <div class="message-action menu-parent">
-                          <button class="icon-only msg-btn header-icon"><i class="fas fa-envelope"></i></button>
+                          <button class="icon-only msg-btn header-icon">
+                            <i class="fas fa-envelope"></i>
+                            <span class="notification-count">32</span>
+                          </button>
                           <div class="sub-menu menu-normal ">
                             <div class="menu-box ">
                               <ul class="menu ">
-                                <li  class="menu-items">
-                                  <i class="fas fa-fire-alt"></i> <a href="matches.html">Matches</a>
+                                <li  class="menu-items justfy-inbetween">
+                                  <div class="left display-flex">
+                                    <i class="fas fa-fire-alt"></i> <a href="matches.html">Matches</a>
+                                  </div>
+                                  <div class="right">
+                                    <span class="notification-icon">3+</span>
+                                  </div>
                                 </li>
-                                <li  class="menu-items">
-                                  <i class="fas fa-user-plus"></i> <a href="invitation.html">Invitation</a>
+                                <li  class="menu-items  justfy-inbetween">
+                                  <div class="left display-flex">
+                                    <i class="fas fa-user-plus"></i> <a href="invitation.html">Invitation</a>
+                                  </div>
+                                  <div class="right">
+                                    <span class="notification-icon">9+</span>
+                                  </div>
                                 </li>
-                                <li  class="menu-items">
-                                  <i class="fas fa-comment"></i> <a href="">Chat</a>
+                                <li  class="menu-items  justfy-inbetween">
+                                  <div class="left display-flex">
+                                    <i class="fas fa-comment"></i> <a href="chat.html">Chat</a>
+                                  </div>
+                                  <div class="right">
+                                    <span class="notification-icon">35+</span>
+                                  </div>
                                 </li>
                               </ul>
                             </div>
@@ -103,13 +125,16 @@
                 </a>
               </div>
               <div class="nav-item">
-                <a href="describe-idea.html"><i class="fas fa-plus"></i></i></a>
+                <a href="describe-idea.html"><i class="fas fa-plus"></i></a>
               </div>
               <div class="nav-item">
                 <a href="friend-list.html"><i class="fas fa-user-friends"></i></a>
               </div>
-              <div class="nav-item chat">
-                <a href="friend-list.html"><i class="fas fa-comment"></i></i></a>
+              <div class="nav-item chat ">
+                <a href="friend-list.html">
+                  <i class="fas fa-comment"></i>
+                  <span class="notification-count mobile">32</span>
+                </a>
               </div>
               <div class="nav-item">
                 <a href="liked-ideas.html"><i class="fas fa-heart"></i></a>
@@ -142,7 +167,7 @@
                         <a href="comments.html">
                           <button class="icon-only comments"><img src="assets/images/icons/comment.svg" /></button>
                         </a>
-                        <button class="icon-only share"><img src="assets/images/icons/share.svg" /></button>
+                        <!-- <button class="icon-only share"><img src="assets/images/icons/share.svg" /></button> -->
                         <button class="icon-only like"><img src="assets/images/icons/like.svg" /></button>
                       </div>
                       <div class="short-comments">
@@ -192,7 +217,7 @@
                         <a href="comments.html">
                           <button class="icon-only comments"><img src="assets/images/icons/comment.svg" /></button>
                         </a>
-                        <button class="icon-only share"><img src="assets/images/icons/share.svg" /></button>
+                        <!-- <button class="icon-only share"><img src="assets/images/icons/share.svg" /></button> -->
                         <button class="icon-only like"><img src="assets/images/icons/like.svg" /></button>
                       </div>
                       <div class="short-comments">
@@ -228,7 +253,7 @@
                         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
                       </div>
                       <div class="post-image custgrid flex">
-                        <div class="column ">
+                        <div class="column " style="width: 100%;">
                           <div>
                             <img src="assets/images/post-img-3.png" alt="">
                           </div>
@@ -246,7 +271,7 @@
                         <a href="comments.html">
                           <button class="icon-only comments"><img src="assets/images/icons/comment.svg" /></button>
                         </a>
-                        <button class="icon-only share"><img src="assets/images/icons/share.svg" /></button>
+                        <!-- <button class="icon-only share"><img src="assets/images/icons/share.svg" /></button> -->
                         <button class="icon-only like"><img src="assets/images/icons/like.svg" /></button>
                       </div>
                       <div class="short-comments">
@@ -263,68 +288,73 @@
                       </div>
                     </div>
                     <!--Post 3 End-->
+
+
+
+                    <div class="post "> <!---Post 2-->
+                      <div class="post-top">
+                        <div class="profile-left">
+                          <img src="assets/images/profile/profile.png" />
+                        </div>
+                        <div class="text-cont">
+                          <div class="name">dan walker</div>
+                          <div class="date">Jan 02 2020, 01:03 PM</div>
+                        </div>
+                      </div>
+                      <div class="post-description marg-bot-20 ">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                        <div class="mt-20 owl-carousel owl-theme cust-height">
+                          <div class="item">
+                            <img src="assets/images/post-img-3.png" width="100%" alt="">
+                          </div>
+                          <div class="item">
+                            <img src="assets/images/post-img-4.png" width="100%" alt="">
+                          </div>
+                          <div class="item">
+                            <img src="assets/images/post-img-5.png" width="100%" alt="">
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="post-image row">
+                        <div class="col-md-4">
+                          <!-- <img src="assets/images/post-img-2.png" width="100%" alt=""> -->
+                          
+                        </div>
+                      </div>
+                      <div class="post-action-btn">  
+                        <a href="comments.html">
+                          <button class="icon-only comments"><img src="assets/images/icons/comment.svg" /></button>
+                        </a>
+                        <!-- <button class="icon-only share"><img src="assets/images/icons/share.svg" /></button> -->
+                        <button class="icon-only like"><img src="assets/images/icons/like.svg" /></button>
+                      </div>
+                      <div class="short-comments">
+                        <div class="commentors ">
+                          <img src="assets/images/profile/comt-profile.png" />
+                          <img src="assets/images/profile/comt-profile1.png" />
+                          <img src="assets/images/profile/comt-profile2.png" />
+                          <img src="assets/images/profile/comt-profile3.png" />
+                        </div>
+                        <div class="total-list">
+                          <span class="likes"><i class="fas fa-heart"></i></span><span class="like-count">27</span>
+                          <span class="coments"><i class="fas fa-comment-dots"></i></span><span class="cmt-count">13</span>
+                        </div>
+                      </div>
+                      <div class="post-comment">
+                        <input type="text" placeholder="Type Your Comments" class="comment-input">
+                        <button class="comment-submit">Post</button>
+                      </div>
+                    </div>
+                    <!--Post 3 End-->
                   </div>
-                  <div class="post-comment">
+                  <!-- <div class="post-comment">
                     <input type="text" placeholder="Type Your Comments" class="comment-input">
                     <button class="comment-submit">Post</button>
-                  </div>
+                  </div> -->
                 </div>
 
                 <div class="col-md-4 col-sm-12 mobile-hide">
-                  <!-- <div class="sidebar_area marg-bot-20 story_box">
-                    <div class="sidebar-title item-sidebar">
-                      <h4 class="title marg-bot-0">Matches</h4>
-                    </div>
-
-                    <div class="add-new-story item-sidebar">
-                      <a href="#" class="add_story display-flex link-item">
-                        <div class="icon-left ">
-                          <i class="fas fa-plus"></i>
-                        </div>
-                        <div class="cust-text-right ">
-                          <h3>Add new story</h3>
-                          <p class="bottom-text text-capital">share an image, video or text</p>
-                        </div>
-                      </a>
-                    </div>
-
-                    <div class="item-sidebar last-login-acc">
-                      <a href="friend-list.html" class=" display-flex link-item">
-                        <div class="profile-left">
-                          <img src="assets/images/profile/profile.png" alt="" >
-                        </div>
-                        <div class="cust-text-right ">
-                          <h3>Dan walker</h3>
-                          <p class="bottom-text ">1 Hour ago</p>
-                        </div>
-                      </a>
-                    </div>
-
-                    <div class=" item-sidebar last-login-acc">
-                      <a href="friend-list.html" class=" display-flex link-item">
-                        <div class="profile-left">
-                          <img src="assets/images/profile/profile.png" alt="">
-                        </div>
-                        <div class="cust-text-right ">
-                          <h3>Dan walker</h3>
-                          <p class="bottom-text ">1 Hour ago</p>
-                        </div>
-                      </a>
-                    </div>
-
-                    <div class=" item-sidebar last-login-acc">
-                      <a href="friend-list.html" class=" display-flex link-item">
-                        <div class="profile-left">
-                          <img src="assets/images/profile/profile.png" alt="">
-                        </div>
-                        <div class="cust-text-right ">
-                          <h3>Dan walker</h3>
-                          <p class="bottom-text ">1 Hour ago</p>
-                        </div>
-                      </a>
-                    </div>
-                  </div> -->
-
                   <div class="sidebar-area  marg-bot-20 bg-yellow">
                     <div class="latest-post-idea text-center">
                       <img src="assets/images/profile/profile.png" class="marg-bot-20">
@@ -347,7 +377,8 @@
                         </div>
                         <div class="cust-text-right ">
                           <div class="suggest-text">nelly cherie</div>
-                          <p class="bottom-text ">Melbournes</p>
+                          <p class="bottom-text ">Designer</p>
+                          <p class="bottom-text ">SAS Tech</p>
                         </div>
                       </a>
                       <div class="add-frds">
@@ -364,7 +395,8 @@
                         </div>
                         <div class="cust-text-right ">
                           <div class="suggest-text">nelly cherie</div>
-                          <p class="bottom-text ">Melbournes</p>
+                          <p class="bottom-text ">TL</p>
+                          <p class="bottom-text ">SAS Tech</p>
                         </div>
                       </a>
                       <div class="add-frds">
@@ -381,7 +413,8 @@
                         </div>
                         <div class="cust-text-right ">
                           <div class="suggest-text">nelly cherie</div>
-                          <p class="bottom-text ">Melbournes</p>
+                          <p class="bottom-text ">Lead</p>
+                          <p class="bottom-text ">MSC Solutions</p>
                         </div>
                       </a>
                       <div class="add-frds">
@@ -400,10 +433,30 @@
         <script src="libraries/js/jquery.min.js"></script>
         <script src="libraries/js/bootstrap.min.js"></script>
         <script src="libraries/js/bootstrap.bundle.min.js"></script>
+        
+        <!-- owl carousel -->
+        <script src="libraries/OwlCarousel/js/owl.carousel.js"></script>
 
         <!-- custom js  -->
         <script src="js/custom.js"></script>
-
+        <script>
+          $('.owl-carousel').owlCarousel({
+            loop:false,
+            margin:10,
+            nav:false,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:1
+                },
+                1000:{
+                    items:1
+                }
+            }
+        })
+        </script>
 
     </body>
 </html>

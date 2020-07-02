@@ -19,7 +19,7 @@
       <header>
           <div class="container">
               <nav class="navbar navbar-expand-md ">
-                  <a href="index.html"  class="navbar-brand logo-image"><img src="../assets/images/logo.png" alt=""></a>
+                  <a href="../index.html"  class="navbar-brand logo-image"><img src="../assets/images/logo.png" alt=""></a>
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                       <span class="navbar-toggler-icon"></span>
                   </button>
@@ -44,7 +44,7 @@
                                   <i class="fas fa-user-plus"></i> <a href="../invitation.html">Invitation</a>
                               </li>
                               <li  class="menu-items">
-                                  <i class="fas fa-comment"></i> <a href="">Chat</a>
+                                  <i class="fas fa-comment"></i> <a href="chat.html">Chat</a>
                               </li>
                               </ul>
                           </div>
@@ -95,7 +95,10 @@
               <a href="../friend-list.html"><i class="fas fa-user-friends"></i></a>
             </div>
             <div class="nav-item chat ">
-              <a href="../chat.html"><i class="fas fa-comment"></i></i></a>
+                <a href="../chat.html">
+                    <i class="fas fa-comment"></i>
+                    <span class="notification-count mobile">32</span>
+                </a>
             </div>
             <div class="nav-item">
               <a href="../liked-ideas.html"><i class="fas fa-heart"></i></a>
@@ -127,6 +130,10 @@
         <section class="profile-page pad-bot-50 pad-top-10">
             <div class="container">
                 <div class="my-profile-section">
+                    <a href="my-profile-info.html" class="profile-item">
+                        <i class="fas fa-info" style="text-align: center;"></i>
+                        <h4>My Info</h4>
+                    </a>
                     <a href="../friend-list.html" class="profile-item">
                         <i class="fas fa-user-friends"></i>
                         <h4>Friend List</h4>
@@ -137,11 +144,11 @@
                     </a>
                     <a href="../invitation.html" class="profile-item">
                         <i class="fas fa-user-plus"></i>
-                        <h4>Invitations</h4>
+                        <h4>Invitations <span class="notification-count2">12</span></h4>
                     </a>
                     <a href="../matches.html" class="profile-item">
                         <i class="fas fa-fire-alt"></i>
-                        <h4>Matches</h4>
+                        <h4>Matches <span class="notification-count2">12</span></h4>
                     </a>
                     <a href="../login.html" class="profile-item">
                         <i class="fas fa-running"></i>

@@ -37,14 +37,14 @@ function goBack() {
   }
 
 // open menu
-$(document).ready(function(){
-    $('.menu-parent').click(function(){
-        // e.preventDefault();
-        // if($(this).hasClass('menu-open')){
-        //     $('.menu-parent').removeClass('menu-open');
-        //     // alert('is there')
-        // }else{
-        // }
-        $(this).toggleClass('menu-open');
-    });
-});
+// $(document).ready(function(){
+//     $('.menu-parent').click(function(){
+//         // e.preventDefault();
+//         // if($(this).hasClass('menu-open')){
+//         //     $('.menu-parent').removeClass('menu-open');
+//         //     // alert('is there')
+//         // }else{
+//         // }
+//         $(this).toggleClass('menu-open');
+//     });
+// });

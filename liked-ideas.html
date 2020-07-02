@@ -37,15 +37,30 @@
                           <div class="sub-menu menu-normal ">
                           <div class="menu-box ">
                               <ul class="menu ">
-                              <li  class="menu-items">
-                                  <i class="fas fa-fire-alt"></i> <a href="matches.html">Matches</a>
-                              </li>
-                              <li  class="menu-items">
-                                  <i class="fas fa-user-plus"></i> <a href="invitation.html">Invitings</a>
-                              </li>
-                              <li  class="menu-items">
-                                  <i class="fas fa-comment"></i> <a href="">Chat</a>
-                              </li>
+                                <li  class="menu-items justfy-inbetween">
+                                  <div class="left display-flex">
+                                    <i class="fas fa-fire-alt"></i> <a href="matches.html">Matches</a>
+                                  </div>
+                                  <div class="right">
+                                    <span class="notification-icon">3+</span>
+                                  </div>
+                                </li>
+                                <li  class="menu-items  justfy-inbetween">
+                                  <div class="left display-flex">
+                                    <i class="fas fa-user-plus"></i> <a href="invitation.html">Invitation</a>
+                                  </div>
+                                  <div class="right">
+                                    <span class="notification-icon">9+</span>
+                                  </div>
+                                </li>
+                                <li  class="menu-items  justfy-inbetween">
+                                  <div class="left display-flex">
+                                    <i class="fas fa-comment"></i> <a href="chat.html">Chat</a>
+                                  </div>
+                                  <div class="right">
+                                    <span class="notification-icon">35+</span>
+                                  </div>
+                                </li>
                               </ul>
                           </div>
                           </div>
@@ -105,13 +120,16 @@
               </a>
             </div>
             <div class="nav-item">
-              <a href="describe-idea.html"><i class="fas fa-plus"></i></i></a>
+              <a href="describe-idea.html"><i class="fas fa-plus"></i></a>
             </div>
             <div class="nav-item ">
               <a href="friend-list.html"><i class="fas fa-user-friends"></i></a>
             </div>
             <div class="nav-item chat">
-              <a href="friend-list.html"><i class="fas fa-comment"></i></i></a>
+              <a href="friend-list.html">
+                <i class="fas fa-comment"></i>
+                <span class="notification-count mobile">32</span>
+              </a>
             </div>
             <div class="nav-item active" >
               <a href="liked-ideas.html"><i class="fas fa-heart"></i></a>
@@ -143,7 +161,7 @@
                             </div>
 
                             <div class="friend_list-action">
-                                <button class="btn-cust btn-blck marg-right_10">View</button>
+                                <button class="btn-cust btn-blck marg-right_10" data-toggle="modal" data-target="#ideaview-pop">View</button>
                                 <button class="btn-cust btn-blck">Unlike</button>
                             </div>
                         </div>
@@ -157,7 +175,7 @@
                             </div>
 
                             <div class="friend_list-action">
-                                <button class="btn-cust btn-blck marg-right_10">View</button>
+                                <button class="btn-cust btn-blck marg-right_10" data-toggle="modal" data-target="#ideaview-pop">View</button>
                                 <button class="btn-cust btn-blck">Unlike</button>
                             </div>
                         </div>
@@ -171,7 +189,7 @@
                             </div>
 
                             <div class="friend_list-action">
-                                <button class="btn-cust btn-blck marg-right_10">View</button>
+                                <button class="btn-cust btn-blck marg-right_10" data-toggle="modal" data-target="#ideaview-pop">View</button>
                                 <button class="btn-cust btn-blck">Unlike</button>
                             </div>
                         </div>
@@ -185,7 +203,7 @@
                             </div>
 
                             <div class="friend_list-action">
-                                <button class="btn-cust btn-blck marg-right_10">View</button>
+                                <button class="btn-cust btn-blck marg-right_10" data-toggle="modal" data-target="#ideaview-pop">View</button>
                                 <button class="btn-cust btn-blck">Unlike</button>
                             </div>
                         </div>
@@ -199,7 +217,7 @@
                             </div>
 
                             <div class="friend_list-action">
-                                <button class="btn-cust btn-blck marg-right_10">View</button>
+                                <button class="btn-cust btn-blck marg-right_10" data-toggle="modal" data-target="#ideaview-pop">View</button>
                                 <button class="btn-cust btn-blck">Unlike</button>
                             </div>
                         </div>
@@ -232,7 +250,8 @@
                         </div>
                         <div class="cust-text-right ">
                           <div class="suggest-text">nelly cherie</div>
-                          <p class="bottom-text ">Melbournes</p>
+                          <p class="bottom-text ">Designer</p>
+                          <p class="bottom-text ">SAS Tech</p>
                         </div>
                       </a>
                       <div class="add-frds">
@@ -249,7 +268,8 @@
                         </div>
                         <div class="cust-text-right ">
                           <div class="suggest-text">nelly cherie</div>
-                          <p class="bottom-text ">Melbournes</p>
+                          <p class="bottom-text ">Designer</p>
+                          <p class="bottom-text ">SAS Tech</p>
                         </div>
                       </a>
                       <div class="add-frds">
@@ -266,7 +286,8 @@
                         </div>
                         <div class="cust-text-right ">
                           <div class="suggest-text">nelly cherie</div>
-                          <p class="bottom-text ">Melbournes</p>
+                          <p class="bottom-text ">Designer</p>
+                          <p class="bottom-text ">SAS Tech</p>
                         </div>
                       </a>
                       <div class="add-frds">
@@ -280,6 +301,35 @@
               </div>
             </div>
         </section>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="ideaview-pop" tabindex="-1" role="dialog" aria-labelledby="ideaview-popLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="ideaview-popLabel">Idea 1</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body post-body-sect cust-scrollbar">
+                <div class="idea-view">
+                  <!-- <div class="idea-title">Idea 1</div> -->
+                  <div class="idea-img">
+                    <img src="assets/images/post-image.png" alt="" width="100%">
+                  </div>
+                  <div class="post-cont mt-20">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+              </div>
+            </div>
+          </div>
+        </div>
 
         <!-- bootstrap Js library -->
         <script src="libraries/js/jquery.min.js"></script>
