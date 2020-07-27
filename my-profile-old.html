@@ -1,0 +1,227 @@
+<html>
+    <head>
+        <title>Timeline</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- bootstrap library -->
+        <link rel="stylesheet" href="libraries/css/bootstrap.min.css">
+        <link rel="stylesheet" href="libraries/css/bootstrap-grid.min.css">
+        <link rel="stylesheet" href="libraries/css/bootstrap-reboot.min.css">
+
+        <!-- fontawesome library -->
+        <link rel="stylesheet" href="libraries/fontawesome/css/all.min.css">
+        <link rel="stylesheet" href="libraries/fontawesome/css/brands.min.css">
+
+        <!-- custom style  -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+      <header>
+          <header>
+              <div class="container">
+                  <nav class="navbar navbar-expand-md ">
+                      <a href="index.html"  class="navbar-brand logo-image"><img src="assets/images/logo.png" alt=""></a>
+                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="search-menu width-100">
+                          <input type="text" class="form-control" placeholder="Search Idea, Technology etc.">
+                      </div>
+  
+                      <div class="right-menu-header text-right width-100 flex-end">
+                          <div class="add-post">
+                             <a href="describe-idea.html"> <button class="btn add_post_btn cut-post_btn">+ Post Idea</button></a>
+                          </div>
+  
+                          <div class="message-action menu-parent">
+                            <button class="icon-only msg-btn header-icon"><i class="fas fa-envelope"></i></button>
+                            <div class="sub-menu menu-normal ">
+                              <div class="menu-box ">
+                                <ul class="menu ">
+                                  <li  class="menu-items justfy-inbetween">
+                                    <div class="left display-flex">
+                                      <i class="fas fa-fire-alt"></i> <a href="matches.html">Matches</a>
+                                    </div>
+                                    <div class="right">
+                                      <span class="notification-icon">3+</span>
+                                    </div>
+                                  </li>
+                                  <li  class="menu-items  justfy-inbetween">
+                                    <div class="left display-flex">
+                                      <i class="fas fa-user-plus"></i> <a href="invitation.html">Invitation</a>
+                                    </div>
+                                    <div class="right">
+                                      <span class="notification-icon">9+</span>
+                                    </div>
+                                  </li>
+                                  <li  class="menu-items  justfy-inbetween">
+                                    <div class="left display-flex">
+                                      <i class="fas fa-comment"></i> <a href="chat.html">Chat</a>
+                                    </div>
+                                    <div class="right">
+                                      <span class="notification-icon">35+</span>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+  
+                          <div class="like-action">
+                            <a href="liked-ideas.html"><button class="icon-only like-btn header-icon"><i class="fas fa-heart"></i></button></a>
+                          </div>
+  
+                          <div class="profile-login menu-parent">
+                           <a > <button class="icon-only profile-btn"><img src="assets/images/profile.png" alt=""></button></a>
+                            <div class="sub-menu pad-0">
+                              <div class="profile display-flex">
+                                <img src="assets/images/profile.png" alt="" class="profile-img">
+                                <div class="name-desp text-left">
+                                  <h4 class="marg-bot-0">Dan walker</h4>
+                                  <p class="marg-bot-0">dan@gmail.com</p>
+                                </div>
+                              </div>
+                              <div class="menu-box menu-users">
+                                  <ul class="menu menu-act">
+                                    <li  class="menu-items"><i class="fas fa-user-alt"></i> <a href="my-profile.html">My Profile</a></li>
+                                    <li  class="menu-items"><i class="fas fa-lightbulb"></i> <a href="my-ideas.html">My Ideas</a></li>
+                                    <li  class="menu-items"><i class="fas fa-user-friends"></i> <a href="friend-list.html">My Friends</a></li>
+                                  </ul>
+  
+                                <ul class="menu menu-logout">
+                                  <li  class="menu-items"><i class="fas fa-sign-out-alt"></i> <a href="login.html">Logout</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                  </nav>
+              </div>
+
+              <div class="mobile-bottom-nav">
+                <div class="nav-item profile">
+                  <a href="mobile/my-profile.html">
+                    <img src="assets/images/profile.png" alt="">
+                  </a>
+                </div>
+                <div class="nav-item">
+                  <a href="describe-idea.html"><i class="fas fa-plus"></i></a>
+                </div>
+                <div class="nav-item active">
+                  <a href="friend-list.html"><i class="fas fa-user-friends"></i></a>
+                </div>
+                <div class="nav-item chat ">
+                  <a href="friend-list.html">
+                    <i class="fas fa-comment"></i>
+                    <span class="notification-count mobile">32</span>
+                  </a>
+                </div>
+                <div class="nav-item">
+                  <a href="liked-ideas.html"><i class="fas fa-heart"></i></a>
+                </div>
+              </div>
+          </header>
+
+        <!-- user header -->
+        <section class="user-header-section">
+          <div class="container">
+            <div class="bredcrumb pull-left bredcrumb-middle">
+              <button class="icon-only back-btn" onclick="goBack()"><i class="fas fa-chevron-left"></i> Back</button>
+          </div>
+          </div>
+            <div class="user-cover_img">
+
+            </div>
+            <div class="container">
+                <div class="user-profile display-flex ">
+                    <div class="profile-image">
+                        <img src="assets/images/myprofile.jpg" alt="">
+                    </div>
+                    <h2 class="profile-name">Dan Walker</h2>
+                </div>
+            </div>
+        </section>
+        <section class="myprofile pad-bot-50 ">
+            <div class="container">
+              <div class="myprofile-sect bg-light-cust pad-top-50">
+                <form action="#" class="myprofile-form">
+                  <!-- <h3>My Profile</h3> -->
+                  <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                      <div class="cust-group">
+                        <label for="first_name">First Name</label>
+                        <input for="last_name" type="text" class="cust-form-control" value="Dan " disabled>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                      <div class="cust-group">
+                        <label for="last_name">Last Name</label>
+                        <input name="last_name" type="text" class="cust-form-control" value="Walker " disabled>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                      <div class="cust-group">
+                        <label for="email">Email</label>
+                        <input name="email" type="text" class="cust-form-control" value="dan@gmail.com " disabled>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                      <div class="cust-group">
+                        <label for="phone">Phone Number</label>
+                        <input name="phone" type="text" class="cust-form-control" value="98765 67982" disabled>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                      <div class="cust-group">
+                        <label for="position">Position</label>
+                        <input name="position" type="text" class="cust-form-control" value="Admin" disabled>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                      <div class="cust-group">
+                        <label for="company">Company</label>
+                        <input name="company" type="text" class="cust-form-control" value="Totalizend" disabled>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                      <div class="cust-group">
+                        <label for="Sector">Sector</label>
+                        <select name="Sector" class="cust-form-control"  id="" disabled>
+                          <option value="">Sector 2</option>
+                          <option value="">Sector 3</option>
+                          <option value="">Sector 4</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                      <div class="cust-group">
+                        <label for="location">Location</label>
+                        <input name="location" type="text" class="cust-form-control" value="Coimbatore" disabled>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+        </section>
+
+        <!-- bootstrap Js library -->
+        <script src="libraries/js/jquery.min.js"></script>
+        <script src="libraries/js/bootstrap.min.js"></script>
+        <script src="libraries/js/bootstrap.bundle.min.js"></script>
+
+        <!-- custom js  -->
+        <script src="js/custom.js"></script>
+
+
+    </body>
+</html>

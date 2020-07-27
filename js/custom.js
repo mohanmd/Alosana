@@ -48,3 +48,22 @@ function goBack() {
 //         $(this).toggleClass('menu-open');
 //     });
 // });
+
+// chat scroll
+$(document).ready(function () {
+    // $('.chating-box ').animate({
+    //     scrollTop: $('.chating-box .chat:last-child').position().bottom
+    // }, 'slow');
+     
+    $('.chating-box').animate({
+        // scrollTop: $('#msgs').eq(0).scrollHeight}, 2000);
+         scrollTop: $('.chating-box')[0].scrollHeight}, 700);
+         $(".send-msg-btn").on("click", function(){
+            var text = $('#btn-input');
+            $('.chating-box').append('<div class="my-chat chat"><div class="chat-cont">'+ text.val() +'</div> </div></div>');
+          text.val('');
+          $('.chating-box').animate({
+            // scrollTop: $('#msgs').eq(0).scrollHeight}, 2000);
+             scrollTop: $('.chating-box')[0].scrollHeight}, 700);
+        });
+});
